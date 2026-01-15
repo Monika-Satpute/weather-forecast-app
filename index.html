@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast App</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Weather Animation Container -->
+  <div id="weatherAnimation"></div>
+
+  <div class="app-container">
+
+    <!-- Header / Search -->
+    <header>
+      <h1>🌤 Weather Forecast</h1>
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="searchBtn">Search</button>
+      </div>
+    </header>
+
+    <!-- Top Weather Card -->
+    <section id="topWeather" class="top-weather"></section>
+
+    <!-- Horizontal Scroll for City Cards -->
+    <section class="card-wrapper">
+      <div class="card-container" id="weatherCards"></div>
+    </section>
+
+    <!-- Search History -->
+    <section class="search-history">
+      <h3>Recently Searched:</h3>
+      <div id="historyContainer"></div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
